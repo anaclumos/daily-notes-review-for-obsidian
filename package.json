@@ -7,7 +7,7 @@
 		"dev": "node esbuild.config.mjs",
 		"build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
 		"version": "node version-bump.mjs && git add manifest.json versions.json", 
-		"package": "yarn build && rm -rf dist && mkdir dist && cp main.js dist/main.js && cp manifest.json dist/manifest.json"
+		"package": "yarn build && rm -rf dist && mkdir dist && cp main.js dist/main.js && cp manifest.json dist/manifest.json && rm -rf ../www/Brain/.obsidian/plugins/review-page-for-daily-notes && mkdir ../www/Brain/.obsidian/plugins/review-page-for-daily-notes && cp -r dist/* ../www/Brain/.obsidian/plugins/review-page-for-daily-notes"
 	},
 	"keywords": [],
 	"author": "",
