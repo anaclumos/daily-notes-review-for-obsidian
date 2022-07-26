@@ -9,7 +9,7 @@ import {
 	Setting,
 } from "obsidian";
 
-import { ReviewDailyNotesView, ReviewDailyNotesViewType } from "./review";
+import { ReviewDailyNotesView, ReviewDailyNotesViewType } from "./src/Review";
 
 export interface CustomSettings {
 	// relative path to daily notes folder
